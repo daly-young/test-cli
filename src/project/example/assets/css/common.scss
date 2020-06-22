@@ -1,0 +1,88 @@
+html {
+  font-family: "PingFang SC", Helvetica, Arial, "Microsoft YaHei", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #343434;
+  background: #fbfbfb;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: .24rem;
+}
+dl, dd, p, ul, li, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.light {
+  color: #ccc;
+}
+
+.inline {
+  .item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.float {
+  overflow: hidden;
+  .item {
+    display: block;
+    float: left;
+  }
+}
+
+.float-bar {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  &.top {
+    top: 0;
+  }
+  &.bottom {
+    bottom: 0;
+  }
+}
+
+.float-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
